@@ -805,7 +805,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("💡 sorry this is not for you !", show_alert=True)
         return
-    await cb.answer("💡 downloading song you requested...", show_alert=True)
+    await cb.answer("💡 downloading song you requested...", show_alert=False)
     x = int(x)
     try:
         cb.message.reply_to_message.from_user.first_name
